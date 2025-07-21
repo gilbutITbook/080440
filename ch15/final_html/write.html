@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <h1 class="page__logo">
+          <a href="./index.html" class="page__logo-link">SU</a>
+        </h1>
+        <nav class="page__navigation">
+          <ul class="page__nav-list">
+            <li class="page__nav-item">
+              <a href="./write.html" class="page__nav-link">글쓰기</a>
+            </li>
+            <li class="page__nav-item">
+              <a href="./login.html" class="page__nav-link">인증</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page__main">
+        <div class="page__write">
+          <h2 class="page__write-text">새로운 글 작성</h2>
+          <form action="#">
+            <div class="page__write-form">
+              <div class="page__write-group">
+                <label for="title" class="page__write-label">제목</label
+                ><input
+                  type="text"
+                  name="title"
+                  id="title"
+                  class="page__write-input"
+                  placeholder="Type product name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="category" class="page__write-label">카테고리</label>
+                <select id="category" class="page__write-select" required>
+                  <option value="">Select category</option>
+                  <option value="Travel">Travel</option>
+                  <option value="Food">Food</option>
+                  <option value="Life">Life</option>
+                </select>
+              </div>
+              <div>
+                <label for="writer" class="page__write-label">작성자</label
+                ><input
+                  type="text"
+                  name="writer"
+                  id="writer"
+                  class="page__write-input"
+                  placeholder="Type product name"
+                  required
+                />
+              </div>
+              <div class="page__write-group">
+                <div>
+                  <label for="item-weight" class="page__write-label"
+                    >썸네일</label
+                  ><label class="page__write-file--hidden" for="user_avatar"
+                    >Upload file</label
+                  ><input
+                    class="page__write-file"
+                    aria-describedby="user_avatar_help"
+                    id="user_avatar"
+                    type="file"
+                    accept="image/*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="page__write-group">
+                <label for="description" class="page__write-label">내용</label
+                ><textarea
+                  id="description"
+                  class="page__write-textarea"
+                  placeholder="Your description here"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="page--btn">글등록</button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="page__footer">
+        <ul class="page__footer-list">
+          <li class="page__footer-item">
+            <a href="/about" class="page__footer-link">About</a>
+          </li>
+          <li class="page__footer-item">
+            <a href="/privacy" class="page__footer-link">Privacy Policy</a>
+          </li>
+          <li class="page__footer-item">
+            <a href="/contact" class="page__footer-link">Contact</a>
+          </li>
+        </ul>
+        <p class="page__footer-copy">
+          &copy; 2025, [길벗] 코딩 자율 학습 React.JS
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

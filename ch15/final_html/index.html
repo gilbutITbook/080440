@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <h1 class="page__logo">
+          <a href="./index.html" class="page__logo-link">SU</a>
+        </h1>
+        <nav class="page__navigation">
+          <ul class="page__nav-list">
+            <li class="page__nav-item">
+              <a href="./write.html" class="page__nav-link">글쓰기</a>
+            </li>
+            <li class="page__nav-item">
+              <a href="./login.html" class="page__nav-link">인증</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page__main">
+        <!-- Search -->
+        <section class="search-area">
+          <article class="search-area__search">
+            <h2 class="search-area__title">The Sucoding Blog</h2>
+            <p class="search-area__description">
+              A Blog About Food, Experience, and Recipes.
+            </p>
+            <form method="get" class="search-area__form">
+              <input
+                type="text"
+                name="q"
+                placeholder="Search"
+                class="search-area__input"
+                autocomplete="off"
+              />
+              <button type="submit" class="search-area__submit">
+                <img
+                  src="./assets/images/search.png"
+                  alt="search-icon"
+                  class="search-area__icon"
+                />
+              </button>
+            </form>
+          </article>
+        </section>
+        <!-- PostArea -->
+        <section class="posts-area">
+          <article class="posts-area__post">
+            <a href="#" class="posts-area__post-link">
+              <img
+                src="./assets/images/dummy-image-1.png"
+                alt="dummy-image-1"
+                class="posts-area__post-image"
+              />
+              <em class="posts-area__post-tag">Travel</em>
+              <h2 class="posts-area__post-title">
+                My Travel Stories from the Past Year
+              </h2>
+              <p class="posts-area__post-meta">
+                George Costanazv • Aug 16, 2025
+              </p>
+              <p class="posts-area__post-excerpt">
+                Over the past year, I had the opportunity to explore new places
+                and immerse myself in different cultures. From the vibrant
+                streets of Europe to the serene beaches of Asia, each journey
+                taught me something unique. The experience of stepping out of my
+                comfort zone helped me grow as a person, providing new
+                perspectives on life. Traveling also allowed me to reconnect
+                with myself, as I embraced moments of solitude while navigating
+                unfamiliar environments.
+              </p>
+            </a>
+          </article>
+          <article class="posts-area__post">
+            <a href="#" class="posts-area__post-link">
+              <img
+                src="./assets/images/dummy-image-2.png"
+                alt="dummy-image-2"
+                class="posts-area__post-image"
+              />
+              <em class="posts-area__post-tag">Food</em>
+              <h2 class="posts-area__post-title">
+                Delicious Chicken Dishes & Tips
+              </h2>
+              <p class="posts-area__post-meta">
+                George Costanazv • Aug 16, 2025
+              </p>
+              <p class="posts-area__post-excerpt">
+                Chicken is one of the most versatile and beloved foods around
+                the world. Whether it’s roasted, fried, grilled, or baked,
+                chicken has a unique way of fitting into every culture and
+                cuisine. In this post, we’ll explore everything you need to know
+                about chicken, including delicious recipes, helpful cooking
+                tips, and some fun facts you might not know!
+              </p>
+            </a>
+          </article>
+          <article class="posts-area__post">
+            <a href="#" class="posts-area__post-link">
+              <img
+                src="./assets/images/dummy-image-1.png"
+                alt="dummy-image-1"
+                class="posts-area__post-image"
+              />
+              <em class="posts-area__post-tag">Travel</em>
+              <h2 class="posts-area__post-title">
+                My Travel Stories from the Past Year
+              </h2>
+              <p class="posts-area__post-meta">
+                George Costanazv • Aug 16, 2025
+              </p>
+              <p class="posts-area__post-excerpt">
+                Over the past year, I had the opportunity to explore new places
+                and immerse myself in different cultures. From the vibrant
+                streets of Europe to the serene beaches of Asia, each journey
+                taught me something unique. The experience of stepping out of my
+                comfort zone helped me grow as a person, providing new
+                perspectives on life. Traveling also allowed me to reconnect
+                with myself, as I embraced moments of solitude while navigating
+                unfamiliar environments.
+              </p>
+            </a>
+          </article>
+          <article class="posts-area__post">
+            <a href="#" class="posts-area__post-link">
+              <img
+                src="./assets/images/dummy-image-2.png"
+                alt="dummy-image-2"
+                class="posts-area__post-image"
+              />
+              <em class="posts-area__post-tag">Food</em>
+              <h2 class="posts-area__post-title">
+                Delicious Chicken Dishes & Tips
+              </h2>
+              <p class="posts-area__post-meta">
+                George Costanazv • Aug 16, 2025
+              </p>
+              <p class="posts-area__post-excerpt">
+                Chicken is one of the most versatile and beloved foods around
+                the world. Whether it’s roasted, fried, grilled, or baked,
+                chicken has a unique way of fitting into every culture and
+                cuisine. In this post, we’ll explore everything you need to know
+                about chicken, including delicious recipes, helpful cooking
+                tips, and some fun facts you might not know!
+              </p>
+            </a>
+          </article>
+        </section>
+      </main>
+
+      <footer class="page__footer">
+        <p class="page__footer-copy">
+          &copy; 2025, [길벗] 코딩 자율 학습 React.JS
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

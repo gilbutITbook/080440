@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <h1 class="page__logo">
+          <a href="./index.html" class="page__logo-link">SU</a>
+        </h1>
+        <nav class="page__navigation">
+          <ul class="page__nav-list">
+            <li class="page__nav-item">
+              <a href="./write.html" class="page__nav-link">글쓰기</a>
+            </li>
+            <li class="page__nav-item">
+              <a href="./login.html" class="page__nav-link">인증</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page__main">
+        <article class="page-auth">
+          <section class="page-auth__container">
+            <nav class="page-auth__toggle">
+              <button
+                id="login-tab"
+                class="page-auth__toggle-button page-auth__toggle-button--active"
+              >
+                로그인
+              </button>
+              <button id="signup-tab" class="page-auth__toggle-button">
+                회원가입
+              </button>
+            </nav>
+
+            <div class="page-auth__form-section">
+              <form class="auth-form auth-form--active" id="login-form">
+                <label for="login-email" class="a11y-hidden">이메일</label>
+                <input
+                  type="email"
+                  id="login-email"
+                  class="auth-form__input"
+                  placeholder="이메일"
+                  required
+                />
+
+                <label for="login-password" class="a11y-hidden">비밀번호</label>
+                <input
+                  type="password"
+                  id="login-password"
+                  class="auth-form__input"
+                  placeholder="비밀번호"
+                  required
+                />
+
+                <button type="submit" class="auth-form__submit">로그인</button>
+              </form>
+
+              <form class="auth-form" id="signup-form">
+                <label for="signup-email" class="a11y-hidden">이메일</label>
+                <input
+                  type="email"
+                  id="signup-email"
+                  class="auth-form__input"
+                  placeholder="이메일"
+                  required
+                />
+                <label for="signup-name" class="a11y-hidden">이름</label>
+                <input
+                  type="text"
+                  id="signup-name"
+                  class="auth-form__input"
+                  placeholder="이름"
+                  required
+                />
+                <label for="signup-password" class="a11y-hidden"
+                  >비밀번호</label
+                >
+                <input
+                  type="password"
+                  id="signup-password"
+                  class="auth-form__input"
+                  placeholder="비밀번호"
+                  required
+                />
+
+                <label for="signup-confirm-password" class="a11y-hidden"
+                  >비밀번호 확인</label
+                >
+                <input
+                  type="password"
+                  id="signup-confirm-password"
+                  class="auth-form__input"
+                  placeholder="비밀번호 확인"
+                  required
+                />
+
+                <button type="submit" class="auth-form__submit">
+                  회원가입
+                </button>
+              </form>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <footer class="page__footer">
+        <ul class="page__footer-list">
+          <li class="page__footer-item">
+            <a href="/about" class="page__footer-link">About</a>
+          </li>
+          <li class="page__footer-item">
+            <a href="/privacy" class="page__footer-link">Privacy Policy</a>
+          </li>
+          <li class="page__footer-item">
+            <a href="/contact" class="page__footer-link">Contact</a>
+          </li>
+        </ul>
+        <p class="page__footer-copy">
+          &copy; 2025, [길벗] 코딩 자율 학습 React.JS
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
