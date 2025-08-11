@@ -6,7 +6,7 @@ export default function Radio() {
     setSelectedValue(event.target.value);
   };
   return (
-    <div>
+    <form>
       <label>
         <input
           type="radio"
@@ -34,6 +34,6 @@ export default function Radio() {
         />
         옵션 3
       </label>
-    </div>
+    </form>
   );
 }

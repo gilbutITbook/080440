@@ -6,13 +6,13 @@ export default function Checkbox() {
     setIsChecked(event.target.checked);
   };
   return (
-    <div>
+    <form>
       <input
         type="checkbox"
         checked={isChecked}
         onChange={handleCheckboxChange}
       />
       <label>아이템 1({isChecked ? "선택됨" : "미선택"})</label>
-    </div>
+    </form>
   );
 }

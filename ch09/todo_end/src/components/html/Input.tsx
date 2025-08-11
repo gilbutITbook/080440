@@ -1,4 +1,4 @@
-type Inputprops = Omit<React.ComponentPropsWithoutRef<"input">, "type"> & {
+type Inputprops = Omit<React.ComponentPropsWithRef<"input">, "type"> & {
   type?: "text";
 };
 

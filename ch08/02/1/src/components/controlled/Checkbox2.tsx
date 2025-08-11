@@ -13,7 +13,7 @@ export default function Checkbox2() {
     }));
   };
   return (
-    <div>
+    <form>
       <input
         type="checkbox"
         id="ag1"
@@ -44,6 +44,6 @@ export default function Checkbox2() {
       <label htmlFor="ag1">
         동의 3({formState.agree3 ? "선택됨" : "미선택"})
       </label>
-    </div>
+    </form>
   );
 }

@@ -1,6 +1,6 @@
 import { useId } from "react";
 
-type InputProps = React.ComponentPropsWithoutRef<"input">;
+type InputProps = React.ComponentPropsWithRef<"input">;
 
 export default function Input({ children, ...props }: InputProps) {
   const uuid = useId();

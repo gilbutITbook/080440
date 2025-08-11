@@ -6,9 +6,9 @@ export default function Textarea() {
     setText(event.target.value);
   };
   return (
-    <div>
+    <form>
       <textarea value={text} onChange={handleChange} />
       <p>입력한 텍스트: {text}</p>
-    </div>
+    </form>
   );
 }
